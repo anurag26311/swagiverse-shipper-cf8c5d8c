@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -15,6 +16,10 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -22,19 +27,19 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <a href="/" className="text-2xl font-bold text-brand-700">
+        <Link to="/" className="text-2xl font-bold text-brand-700">
           ReWorks
-        </a>
+        </Link>
         
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#swag-platform" className="link-with-underline font-medium">Swag Platform</a>
-          <a href="#solutions" className="link-with-underline font-medium">Solutions</a>
-          <a href="#features" className="link-with-underline font-medium">Features</a>
-          <a href="#pricing" className="link-with-underline font-medium">Pricing</a>
-          <a href="#contact" className="hero-button bg-brand-600 text-white hover:bg-brand-700">
+          <Link to="/swag-platform" className="link-with-underline font-medium">Swag Platform</Link>
+          <Link to="/solutions" className="link-with-underline font-medium">Solutions</Link>
+          <Link to="/features" className="link-with-underline font-medium">Features</Link>
+          <Link to="/pricing" className="link-with-underline font-medium">Pricing</Link>
+          <Link to="/contact" className="hero-button bg-brand-600 text-white hover:bg-brand-700">
             Get A Demo
-          </a>
+          </Link>
         </nav>
         
         {/* Mobile Navigation Toggle */}
@@ -54,13 +59,13 @@ const Navbar = () => {
         } overflow-hidden`}
       >
         <div className="container mx-auto px-4 py-6 flex flex-col space-y-6">
-          <a href="#swag-platform" className="font-medium px-3 py-2 rounded-md hover:bg-gray-100 transition-colors duration-200">Swag Platform</a>
-          <a href="#solutions" className="font-medium px-3 py-2 rounded-md hover:bg-gray-100 transition-colors duration-200">Solutions</a>
-          <a href="#features" className="font-medium px-3 py-2 rounded-md hover:bg-gray-100 transition-colors duration-200">Features</a>
-          <a href="#pricing" className="font-medium px-3 py-2 rounded-md hover:bg-gray-100 transition-colors duration-200">Pricing</a>
-          <a href="#contact" className="hero-button bg-brand-600 text-white hover:bg-brand-700 w-full flex justify-center">
+          <Link to="/swag-platform" onClick={closeMenu} className="font-medium px-3 py-2 rounded-md hover:bg-gray-100 transition-colors duration-200">Swag Platform</Link>
+          <Link to="/solutions" onClick={closeMenu} className="font-medium px-3 py-2 rounded-md hover:bg-gray-100 transition-colors duration-200">Solutions</Link>
+          <Link to="/features" onClick={closeMenu} className="font-medium px-3 py-2 rounded-md hover:bg-gray-100 transition-colors duration-200">Features</Link>
+          <Link to="/pricing" onClick={closeMenu} className="font-medium px-3 py-2 rounded-md hover:bg-gray-100 transition-colors duration-200">Pricing</Link>
+          <Link to="/contact" onClick={closeMenu} className="hero-button bg-brand-600 text-white hover:bg-brand-700 w-full flex justify-center">
             Get A Demo
-          </a>
+          </Link>
         </div>
       </div>
     </header>

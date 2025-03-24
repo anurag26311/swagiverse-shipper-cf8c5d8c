@@ -1,4 +1,6 @@
 
+import { Link } from 'react-router-dom';
+
 const CallToAction = () => {
   return (
     <section className="py-16 bg-gradient-to-r from-brand-100/80 to-brand-50">
@@ -9,12 +11,12 @@ const CallToAction = () => {
         <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
           We make the sourcing, management, and distribution of swag incredibly easy.
         </p>
-        <a 
-          href="#contact" 
+        <Link 
+          to="/contact" 
           className="hero-button bg-brand-600 text-white hover:bg-brand-700 shadow-md hover:shadow-lg"
         >
           Get A Demo
-        </a>
+        </Link>
       </div>
     </section>
   );

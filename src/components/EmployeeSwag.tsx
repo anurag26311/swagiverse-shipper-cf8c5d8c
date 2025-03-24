@@ -1,5 +1,6 @@
 
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const EmployeeSwag = () => {
   return (
@@ -13,16 +14,16 @@ const EmployeeSwag = () => {
             <p className="text-lg text-muted-foreground mb-8">
               Send high-quality branded gifts to all of your staff, regardless of their location. You can brand thousands of products, including high-end retail items, clothes, and drinkware.
             </p>
-            <a href="#learn-more" className="inline-flex items-center font-medium text-brand-600 hover:text-brand-700 transition-colors">
+            <Link to="/employee-swag" className="inline-flex items-center font-medium text-brand-600 hover:text-brand-700 transition-colors">
               Read More
               <ArrowRight size={16} className="ml-2" />
-            </a>
+            </Link>
           </div>
           
           <div className="order-1 lg:order-2 relative">
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl animate-float">
               <img 
-                src="https://images.unsplash.com/photo-1583316174775-bd6dc0e9f147?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                src="https://images.unsplash.com/photo-1606293459339-ab3dd48d79c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
                 alt="Employee swag items" 
                 className="w-full h-full object-cover lazy-image loaded"
               />

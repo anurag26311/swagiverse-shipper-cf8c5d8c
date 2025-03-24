@@ -50,8 +50,8 @@ const Hero = () => {
         <div className="relative mt-16 animate-fade-up opacity-0" style={{ animationDelay: '0.6s' }}>
           <div className="aspect-[16/9] max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-2xl border border-border">
             <img 
-              src="https://images.unsplash.com/photo-1576633587382-13ddf37b1fc1?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-              alt="Branded swag" 
+              src="https://images.unsplash.com/photo-1564069114553-7215e1ff1890?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+              alt="Branded swag collection" 
               className="w-full h-full object-cover lazy-image loaded"
             />
           </div>

@@ -1,5 +1,6 @@
 
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Kitting = () => {
   return (
@@ -9,7 +10,7 @@ const Kitting = () => {
           <div className="relative">
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl animate-float">
               <img 
-                src="https://images.unsplash.com/photo-1642790106767-56e9405636a2?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                src="https://images.unsplash.com/photo-1607435097405-db48f377bff6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
                 alt="Custom kitting and branded boxes" 
                 className="w-full h-full object-cover lazy-image loaded"
               />
@@ -27,10 +28,10 @@ const Kitting = () => {
             <p className="text-lg text-muted-foreground mb-8">
               You can create attractive branded unboxing experiences with custom kitting. Customize the outside and inside of a box with your company's logo, then select from a variety of filler options and inserts to showcase your merchandise to its maximum potential!
             </p>
-            <a href="#learn-more" className="inline-flex items-center font-medium text-purple-600 hover:text-purple-700 transition-colors">
+            <Link to="/kitting" className="inline-flex items-center font-medium text-purple-600 hover:text-purple-700 transition-colors">
               Read More
               <ArrowRight size={16} className="ml-2" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

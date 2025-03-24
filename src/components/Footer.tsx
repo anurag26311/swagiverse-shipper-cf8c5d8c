@@ -1,5 +1,6 @@
 
 import { Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -13,15 +14,15 @@ const Footer = () => {
               Our swag management platform simplifies the buying, managing, and distribution of swag and branded merchandise.
             </p>
             <div className="flex space-x-4">
-              <a href="#twitter" className="text-gray-300 hover:text-white transition-colors">
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
                 <Twitter size={20} />
                 <span className="sr-only">Twitter</span>
               </a>
-              <a href="#instagram" className="text-gray-300 hover:text-white transition-colors">
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
                 <Instagram size={20} />
                 <span className="sr-only">Instagram</span>
               </a>
-              <a href="#linkedin" className="text-gray-300 hover:text-white transition-colors">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
                 <Linkedin size={20} />
                 <span className="sr-only">LinkedIn</span>
               </a>
@@ -32,29 +33,29 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Swag Platform</h4>
             <ul className="space-y-3">
-              <li><a href="#catalogue" className="text-gray-300 hover:text-white transition-colors">Swag Catalogue</a></li>
-              <li><a href="#solutions" className="text-gray-300 hover:text-white transition-colors">Solutions</a></li>
-              <li><a href="#features" className="text-gray-300 hover:text-white transition-colors">Features</a></li>
-              <li><a href="#pricing" className="text-gray-300 hover:text-white transition-colors">Pricing</a></li>
+              <li><Link to="/catalogue" className="text-gray-300 hover:text-white transition-colors">Swag Catalogue</Link></li>
+              <li><Link to="/solutions" className="text-gray-300 hover:text-white transition-colors">Solutions</Link></li>
+              <li><Link to="/features" className="text-gray-300 hover:text-white transition-colors">Features</Link></li>
+              <li><Link to="/pricing" className="text-gray-300 hover:text-white transition-colors">Pricing</Link></li>
             </ul>
           </div>
           
           <div>
             <h4 className="text-lg font-semibold mb-4">Company</h4>
             <ul className="space-y-3">
-              <li><a href="#about" className="text-gray-300 hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#contact" className="text-gray-300 hover:text-white transition-colors">Contact</a></li>
-              <li><a href="#help" className="text-gray-300 hover:text-white transition-colors">Help Center</a></li>
-              <li><a href="#careers" className="text-gray-300 hover:text-white transition-colors">Careers</a></li>
+              <li><Link to="/about" className="text-gray-300 hover:text-white transition-colors">About Us</Link></li>
+              <li><Link to="/contact" className="text-gray-300 hover:text-white transition-colors">Contact</Link></li>
+              <li><Link to="/help" className="text-gray-300 hover:text-white transition-colors">Help Center</Link></li>
+              <li><Link to="/careers" className="text-gray-300 hover:text-white transition-colors">Careers</Link></li>
             </ul>
           </div>
           
           <div>
             <h4 className="text-lg font-semibold mb-4">Legal</h4>
             <ul className="space-y-3">
-              <li><a href="#refund" className="text-gray-300 hover:text-white transition-colors">Refund Policy</a></li>
-              <li><a href="#privacy" className="text-gray-300 hover:text-white transition-colors">Privacy Policy</a></li>
-              <li><a href="#terms" className="text-gray-300 hover:text-white transition-colors">Terms of Use</a></li>
+              <li><Link to="/refund-policy" className="text-gray-300 hover:text-white transition-colors">Refund Policy</Link></li>
+              <li><Link to="/privacy-policy" className="text-gray-300 hover:text-white transition-colors">Privacy Policy</Link></li>
+              <li><Link to="/terms-of-use" className="text-gray-300 hover:text-white transition-colors">Terms of Use</Link></li>
             </ul>
           </div>
         </div>
