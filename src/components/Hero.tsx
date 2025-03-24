@@ -1,6 +1,6 @@
-
 import { useState, useRef } from 'react';
 import { Play, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
@@ -31,12 +31,12 @@ const Hero = () => {
             Experience a fully featured swag management and say goodbye to swag logistics hassles.
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-            <a 
-              href="#contact" 
+            <Link 
+              to="/contact" 
               className="hero-button bg-brand-600 text-white hover:bg-brand-700 w-full sm:w-auto"
             >
               Get A Demo
-            </a>
+            </Link>
             <button 
               onClick={openVideoModal}
               className="hero-button bg-white border border-border hover:bg-gray-50 flex items-center gap-2 w-full sm:w-auto"

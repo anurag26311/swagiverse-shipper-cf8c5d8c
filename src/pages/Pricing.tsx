@@ -1,10 +1,10 @@
-
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Check, HelpCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const PricingCard = ({ 
   title, 
@@ -45,12 +45,14 @@ const PricingCard = ({
           </li>
         ))}
       </ul>
-      <Button 
-        className={`w-full ${popular ? 'bg-brand-600 hover:bg-brand-700' : ''}`}
-        variant={popular ? 'default' : 'outline'}
-      >
-        {buttonText}
-      </Button>
+      <Link to="/contact">
+        <Button 
+          className={`w-full ${popular ? 'bg-brand-600 hover:bg-brand-700' : ''}`}
+          variant={popular ? 'default' : 'outline'}
+        >
+          {buttonText}
+        </Button>
+      </Link>
     </div>
   );
 };
@@ -138,9 +140,11 @@ const Pricing = () => {
               We offer tailored plans for businesses with specific requirements. 
               Our team will work with you to create a custom solution that fits your needs.
             </p>
-            <Button size="lg" className="bg-brand-600 hover:bg-brand-700">
-              Contact Our Sales Team
-            </Button>
+            <Link to="/contact">
+              <Button size="lg" className="bg-brand-600 hover:bg-brand-700">
+                Contact Our Sales Team
+              </Button>
+            </Link>
           </div>
         </div>
 
