@@ -23,8 +23,8 @@ const EmployeeSwag = () => {
           <div className="order-1 lg:order-2 relative">
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl animate-float">
               <img 
-                src="https://images.unsplash.com/photo-1606293459339-ab3dd48d79c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                alt="Employee swag items" 
+                src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9" 
+                alt="Branded employee swag items" 
                 className="w-full h-full object-cover lazy-image loaded"
               />
             </div>
