@@ -14,6 +14,7 @@ const Contact = () => {
     company: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
   
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -25,23 +26,34 @@ const Contact = () => {
   
   const handleSubmit = (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
     
     // In a real application, you'd send the form data to a server here
     console.log('Form submitted:', formData);
     
-    // Show success toast
-    toast({
-      title: "Request Submitted",
-      description: "Thank you for your interest! Our team will contact you shortly.",
-    });
-    
-    // Clear form
-    setFormData({
-      name: '',
-      email: '',
-      company: '',
-      message: ''
-    });
+    // Simulate API call
+    setTimeout(() => {
+      // Show success toast
+      toast({
+        title: "Request Submitted",
+        description: "Thank you for your interest! Our team will contact you shortly.",
+      });
+      
+      // Clear form
+      setFormData({
+        name: '',
+        email: '',
+        company: '',
+        message: ''
+      });
+      
+      setIsSubmitting(false);
+      
+      // Redirect to home after a delay
+      setTimeout(() => {
+        navigate('/');
+      }, 2000);
+    }, 1000);
   };
 
   return (
@@ -108,8 +120,9 @@ const Contact = () => {
             <button 
               type="submit"
               className="w-full bg-brand-600 text-white py-2 px-4 rounded-md hover:bg-brand-700 transition-colors font-medium"
+              disabled={isSubmitting}
             >
-              Request a Demo
+              {isSubmitting ? 'Submitting...' : 'Request a Demo'}
             </button>
           </form>
         </div>

@@ -1,3 +1,4 @@
+
 import { useState, useRef } from 'react';
 import { Play, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -49,11 +50,13 @@ const Hero = () => {
         
         <div className="relative mt-16 animate-fade-up opacity-0" style={{ animationDelay: '0.6s' }}>
           <div className="aspect-[16/9] max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-2xl border border-border">
-            <img 
-              src="https://images.unsplash.com/photo-1564069114553-7215e1ff1890?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-              alt="Branded swag collection" 
-              className="w-full h-full object-cover lazy-image loaded"
-            />
+            <Link to="/swag-platform">
+              <img 
+                src="https://images.unsplash.com/photo-1564069114553-7215e1ff1890?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                alt="Branded swag collection" 
+                className="w-full h-full object-cover lazy-image loaded transition-transform hover:scale-105 duration-500"
+              />
+            </Link>
           </div>
           <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-10"></div>
         </div>
@@ -62,7 +65,7 @@ const Hero = () => {
       {/* Sub-headline */}
       <div className="container mx-auto px-4 mt-16 text-center">
         <p className="text-xl md:text-2xl font-medium text-balance max-w-3xl mx-auto animate-fade-up opacity-0" style={{ animationDelay: '0.8s' }}>
-          A swag management company that makes sourcing, storing, and shipping swag easy.
+          A swag management company that makes <Link to="/features" className="text-brand-600 hover:underline">sourcing</Link>, <Link to="/kitting" className="text-brand-600 hover:underline">storing</Link>, and <Link to="/employee-swag" className="text-brand-600 hover:underline">shipping</Link> swag easy.
         </p>
       </div>
 
