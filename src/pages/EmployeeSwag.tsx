@@ -9,12 +9,12 @@ const EmployeeSwag = () => {
   // Gallery images for swag showcase
   const swagGallery = [
     {
-      src: "https://images.unsplash.com/photo-1533750446969-255bbf191920",
-      alt: "Branded notebooks and planners"
+      src: "/lovable-uploads/10316d30-7ffc-4399-8a27-5dec3778f2f0.png",
+      alt: "Seasonal Swag For Holiday Cheer - Branded hoodies and accessories"
     },
     {
-      src: "https://images.unsplash.com/photo-1531525645387-7f14be1bdbbd",
-      alt: "Branded t-shirts and apparel"
+      src: "/lovable-uploads/73f4f357-397d-440c-8a2f-c0f9deeafa4e.png",
+      alt: "Personalized Lanyards For Professionalism"
     },
     {
       src: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9",
@@ -56,8 +56,8 @@ const EmployeeSwag = () => {
             </div>
             <div className="rounded-xl overflow-hidden shadow-lg">
               <img 
-                src="https://images.unsplash.com/photo-1565236752527-75319525c6e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" 
-                alt="Happy employees with branded merchandise" 
+                src="/lovable-uploads/10316d30-7ffc-4399-8a27-5dec3778f2f0.png" 
+                alt="Holiday themed branded swag items" 
                 className="w-full h-full object-cover"
               />
             </div>

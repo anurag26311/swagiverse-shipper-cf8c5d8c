@@ -7,8 +7,8 @@ const EmployeeSwag = () => {
   // Images based on reworks.in branded swag items
   const swagImages = [
     {
-      src: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9",
-      alt: "Branded employee swag items"
+      src: "/lovable-uploads/10316d30-7ffc-4399-8a27-5dec3778f2f0.png",
+      alt: "Seasonal Swag For Holiday Cheer - Branded hoodies and accessories"
     },
     {
       src: "https://images.unsplash.com/photo-1533750446969-255bbf191920",
