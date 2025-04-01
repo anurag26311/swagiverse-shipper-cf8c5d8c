@@ -1,8 +1,25 @@
 
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const EmployeeSwag = () => {
+  // Images based on reworks.in branded swag items
+  const swagImages = [
+    {
+      src: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9",
+      alt: "Branded employee swag items"
+    },
+    {
+      src: "https://images.unsplash.com/photo-1533750446969-255bbf191920",
+      alt: "Branded notebooks and stationery"
+    },
+    {
+      src: "https://images.unsplash.com/photo-1531525645387-7f14be1bdbbd",
+      alt: "Branded t-shirts and apparel"
+    }
+  ];
+
   return (
     <section className="py-20 overflow-hidden">
       <div className="container mx-auto px-4">
@@ -21,12 +38,30 @@ const EmployeeSwag = () => {
           </div>
           
           <div className="order-1 lg:order-2 relative">
-            <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl animate-float">
-              <img 
-                src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9" 
-                alt="Branded employee swag items" 
-                className="w-full h-full object-cover lazy-image loaded"
-              />
+            <div className="grid grid-cols-2 gap-4">
+              {/* Main image */}
+              <div className="col-span-2 rounded-2xl overflow-hidden shadow-xl animate-float">
+                <AspectRatio ratio={4/3}>
+                  <img 
+                    src={swagImages[0].src}
+                    alt={swagImages[0].alt}
+                    className="w-full h-full object-cover lazy-image loaded"
+                  />
+                </AspectRatio>
+              </div>
+              
+              {/* Additional swag items */}
+              {swagImages.slice(1).map((image, index) => (
+                <div key={index} className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                  <AspectRatio ratio={1/1}>
+                    <img 
+                      src={image.src}
+                      alt={image.alt}
+                      className="w-full h-full object-cover lazy-image loaded hover:scale-105 transition-transform duration-300"
+                    />
+                  </AspectRatio>
+                </div>
+              ))}
             </div>
             
             {/* Decorative elements */}
