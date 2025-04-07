@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { useToast } from "@/components/ui/use-toast";
-import { Calendar, Mail, Phone, ArrowRight } from 'lucide-react';
+import { Calendar, Mail, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Contact = () => {
@@ -94,7 +94,7 @@ const Contact = () => {
                   </li>
                   <li className="flex items-start">
                     <div className="flex-shrink-0 w-8 h-8 bg-brand-100 rounded-full flex items-center justify-center mr-3">
-                      <Phone className="h-4 w-4 text-brand-600" />
+                      <Calendar className="h-4 w-4 text-brand-600" />
                     </div>
                     <div>
                       <h4 className="font-medium text-gray-900">Custom Pricing</h4>
@@ -186,14 +186,7 @@ const Contact = () => {
           </div>
           
           {/* Contact methods */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto animate-fade-up opacity-0" style={{ animationDelay: '0.4s' }}>
-            <div className="text-center">
-              <div className="w-12 h-12 bg-brand-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Phone className="h-5 w-5 text-brand-600" />
-              </div>
-              <h3 className="font-medium text-gray-900 mb-1">Call Us</h3>
-              <p className="text-gray-600">+91 9876543210</p>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto animate-fade-up opacity-0" style={{ animationDelay: '0.4s' }}>
             <div className="text-center">
               <div className="w-12 h-12 bg-brand-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Mail className="h-5 w-5 text-brand-600" />

@@ -46,7 +46,7 @@ const PrivacyPolicy = () => {
                   We may collect several types of information from and about users of our platform, including:
                 </p>
                 <ul className="list-disc pl-5 space-y-2 text-gray-700 mb-4">
-                  <li>Personal identifiers such as name, email address, phone number, and company information.</li>
+                  <li>Personal identifiers such as name, email address, and company information.</li>
                   <li>Information about your company and its swag management needs.</li>
                   <li>Information about your internet connection, the equipment you use to access our platform, and usage details.</li>
                   <li>Transactional data including products ordered, shipping information, and payment details.</li>

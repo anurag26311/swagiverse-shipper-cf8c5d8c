@@ -1,7 +1,7 @@
 
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { Mail, Phone, MessageSquare, HelpCircle, Search } from 'lucide-react';
+import { Mail, MessageSquare, HelpCircle, Search } from 'lucide-react';
 import { 
   Accordion,
   AccordionContent,
@@ -82,17 +82,7 @@ const Help = () => {
                 <div>
                   <h3 className="text-lg font-semibold mb-1">Email Support</h3>
                   <p className="text-muted-foreground mb-2">We'll respond within 24 hours</p>
-                  <a href="mailto:support@reworks.in" className="text-brand-600 font-medium hover:underline">support@reworks.in</a>
-                </div>
-              </div>
-              <div className="flex items-start mb-6">
-                <div className="w-10 h-10 bg-brand-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                  <Phone className="h-5 w-5 text-brand-600" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold mb-1">Phone Support</h3>
-                  <p className="text-muted-foreground mb-2">Available 9 AM - 6 PM EST, Mon-Fri</p>
-                  <a href="tel:+18001234567" className="text-brand-600 font-medium hover:underline">+1 800 123 4567</a>
+                  <a href="mailto:support@reworks.tech" className="text-brand-600 font-medium hover:underline">support@reworks.tech</a>
                 </div>
               </div>
               <div className="flex items-start">
